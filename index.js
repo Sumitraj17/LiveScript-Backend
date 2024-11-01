@@ -12,7 +12,7 @@ const server = http.createServer(App);
 const io = new Server(server);
 connectToDb();
 
-App.use(cors({ origin:['http://localhost:5173'],credentials: true }));
+App.use(cors({ origin:['http://localhost:5173','https://livescript.netlify.app/'],credentials: true }));
 
 App.use(express.json());
 App.use(cookieParser());
